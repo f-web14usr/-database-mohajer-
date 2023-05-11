@@ -1,0 +1,60 @@
+table.datatable{
+border: 1px solid rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+border-collapse: collapse ;
+vertical-align: middle;
+text-align: center;
+width: 100%;
+background-color: #ffffff;
+
+}
+.datatable tr{
+    height: 52px;
+}
+.datatable tr:hover:not(:first-child){
+    background-color: rgba(237, 231, 246,.6);
+}
+.datatable tr:first-child{
+    height: 56px;
+    color: rgba(0, 0, 0, 0.6);
+  
+}
+.datatable  td>a{
+   margin:0 -16px 0 16px;
+ 
+}
+.datatable td,.datatable th{
+    padding: 0px 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+img.img-tumbnail{
+    max-width:48px;
+}
+.datatable .img-tumbnail{
+    max-height: 52px;
+    
+}
+
+
+table.datatable.big{
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-collapse: collapse ;
+    vertical-align: middle;
+    text-align: center;
+    width: 100vw;
+    background-color: #ffffff;
+    margin-top: 8px;
+    
+} 
+.datatable.big tr:nth-child(even){
+    background-color: #E8DEF8;
+}
+.datatable.big tr{
+  height: 50px;
+}
+.datatable.big img.img-tumbnail{
+    max-height:80px;
+    
+}
+    

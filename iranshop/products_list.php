@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  
-    <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+    <title>products_list</title>
 </head>
 <body dir="rtl">
 <?php
@@ -41,7 +41,7 @@ $productList=$result->fetch_all(MYSQLI_ASSOC);
 </form>
 
 <h3>لیست محصولات</h3>
-<table style="width: 100%">
+<table class="datatable" >
 <th>نام کالا</th>
 <th>قیمت (تومان)</th>
 <th>تعداد</th>
@@ -64,7 +64,8 @@ echo"
  <td>{$product['gpu']}</td> 
  <td>{$product['ram']}</td> 
  <td>{$product['p_image']}</td> 
- 
+ <td><a href='productDetail_controler.php?id={$product['id']}' >اطلاعات بیشتر</a></td>
+
  </tr>
 
 ";
