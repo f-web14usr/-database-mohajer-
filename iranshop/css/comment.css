@@ -1,0 +1,41 @@
+
+.comments{
+  display: grid;
+  grid-template-rows: repeat(5,auto);
+    color: #000000;
+    font-family: 'B Mitra';
+    padding: 8px 12px;
+    margin-right: 16px;
+    font-size: 18px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    position: relative;
+   
+   
+    width: 95%;
+    
+
+
+    }
+     .duration{
+        transition: .3s;
+        opacity: 0;
+        display: none;
+
+    }
+    
+    
+    .comments span{
+      font-size: 18px;
+      font-weight:500;
+      margin-right: 8px;
+      
+    }
+    
+    .comments a{
+      color: #fff;
+      margin-right: 16px;
+      font-family:  Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 12px;
+      font-weight: 100;
+    }

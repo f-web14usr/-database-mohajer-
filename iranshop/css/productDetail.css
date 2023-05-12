@@ -1,3 +1,4 @@
+@import url(comment.css);
 *{
     --mainColor:#FFA726;
       --secendColor:rgb(131, 46, 46);
@@ -70,4 +71,18 @@
     font-size: 30px;
     letter-spacing: 2px; 
     color: var( --darkColor);
+}
+.form-container{
+display: block;
+background-color: rgb(238, 229, 227);
+height: fit-content;
+padding: 18px;
+}
+.form-container input[type="text"],input[type="email"]{
+    display: block;
+    width: 1230px;
+    margin-bottom: 14px;
+    padding: 8px 24px;
+text-align: left;
+align-items: flex-start;
 }
