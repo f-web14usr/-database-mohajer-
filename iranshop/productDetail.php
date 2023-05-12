@@ -39,10 +39,6 @@ if (isset($_POST["post_comment"]))
 
 if (isset($_POST["do_reply"]))
 {
-    
-
-
-
     $fullname = $_POST["fullname"];
     $email = $_POST["email"];
     $title = $_POST["title"];
@@ -50,7 +46,6 @@ if (isset($_POST["do_reply"]))
     $pid=$_POST["pid"];
     $reply_of = $_POST["reply_of"];
     $date=date("Y/m/d");
-
 
 
     $sql= "SELECT * FROM comments WHERE id = " . $reply_of;
@@ -66,21 +61,7 @@ if (isset($_POST["do_reply"]))
     echo "<p>پاسخ شما به کامنت ثبت شد.</p>";
    }
 
-
-
-
-
 }
- 
-
-
-
-
-
-
-
-
-
  
 
  echo"
@@ -159,9 +140,6 @@ echo"
 ";
 ?>
 
-
-
-
 <?php
 
  
@@ -234,11 +212,6 @@ echo"
 </ul>
 
 
-
-
-
-
-
 <ul class='comments reply'>
 ";
 
@@ -246,10 +219,6 @@ echo"
 $sql= "SELECT DISTINCT * FROM comments WHERE pid = $pid AND reply_of ={$comment['id']}";
 $result = $conn->query($sql);
 $replys=$result->fetch_all(MYSQLI_ASSOC);
-
-
-
-
 
     foreach ($replys as $reply)
         {
@@ -279,53 +248,8 @@ $replys=$result->fetch_all(MYSQLI_ASSOC);
            }
 
 
-
-
-
-
-
-
-
-
-
-
-
 }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
 
